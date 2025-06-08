@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eae2e6;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #222;
+  text-decoration: underline double aqua;
+  animation: gentleBounce 9s ease-in-out infinite alternate;
+}
+
+@keyframes gentleBounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccccccc6;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-group select {
+  width: 30%;
+}
+
+.phone-group input {
+  width: 70%;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submit-button,
+.cancel-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #edebeb;
+  background-color: #92d0d0;
+  color: #222;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  text-align: center;
+  min-width: 100px;
+}
+
+.submit-button:hover,
+.cancel-button:hover {
+  background-color: #dcdcdc;
+}

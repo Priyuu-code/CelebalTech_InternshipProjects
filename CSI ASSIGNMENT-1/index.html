@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2><b>USER REGISTRATION FORM</b> 📝👇</h2>
+
+    <form id="regForm">
+      <table>
+        <tr>
+          <td><label for="username"><b>Username:</b></label></td>
+          <td>
+            <input type="text" id="username" name="username" pattern="[A-Z ]+" required>
+            <p>(Only in capital letters, e.g., ATUL YOGESH KUMAR)</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email"><b>Email:</b></label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="password"><b>Password:</b></label></td>
+          <td>
+            <input type="password" id="password" name="password" required><p>12+ characters including A-Z, a-z, 0-9, symbols</p>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="birthdate"><b>Birthdate:</b></label></td>
+          <td><input type="date" id="birthdate" name="birthdate" required></td>
+        </tr>
+        <tr>
+          <td><label for="address"><b>Address:</b></label></td>
+          <td><textarea id="address" name="address" rows="3" required></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="phone"><b>Phone Number:</b></label></td>
+          <td>
+            <select id="countryCode" name="countryCode" required>
+              <option value="">Select</option>
+              <option value="+1">US +1</option>
+              <option value="+91">IN +91</option>
+              <option value="+49">DE +49</option>
+              <option value="+86">CN +86</option>
+              <option value="+81">JP +81</option>
+              <option value="+44">UK +44</option>
+              <option value="+33">FR +33</option>
+              <option value="+39">IT +39</option>
+              <option value="+55">BR +55</option>
+            </select>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="1234567890">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="reset" class="cancel-button">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("regForm").addEventListener("submit", function (e) {
+      e.preventDefault(); 
+
+      if (this.checkValidity()) {
+        window.location.href = "thankyou.html";
+       } 
+       else {
+        this.reportValidity();
+       }
+    });
+  </script>
+</body>
+</html>
