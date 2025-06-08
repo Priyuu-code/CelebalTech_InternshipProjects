@@ -1,1 +1,1 @@
-# CelebalTech_InternshipProjects
+# CelebalTech_InternshipProjects - This repository contains the work completed as part of my internship at Celebal Technologies. It includes assignments, tasks, and project work based on app modernization.
